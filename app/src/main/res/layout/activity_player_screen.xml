@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PlayerScreenActivity">
+    
+    <ImageView
+        android:id="@+id/iv_song_img"
+        android:layout_above="@+id/seekbar"
+        android:contentDescription="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/group_2"/>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_above="@+id/tv_progress_time"
+        android:paddingTop="@dimen/paddingSmall"
+        android:paddingLeft="@dimen/paddingLarge"
+        android:paddingRight="@dimen/paddingLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_progress_time"
+        android:layout_above="@+id/tv_song_name"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/paddingSmall"
+        android:paddingRight="@dimen/paddingSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0:00"
+        android:textSize="@dimen/search_hint_txt_font"
+        android:textColor="@color/colorText"/>
+    <TextView
+        android:id="@+id/tv_total_time"
+        android:layout_above="@+id/tv_song_name"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="@dimen/paddingSmall"
+        android:paddingRight="@dimen/paddingSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="8:00"
+        android:textSize="@dimen/search_hint_txt_font"
+        android:textColor="@color/colorText"/>
+
+    <TextView
+        android:id="@+id/tv_song_name"
+        android:layout_above="@+id/tv_song_desc"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/paddingSmall"
+        android:paddingRight="@dimen/paddingSmall"
+        android:singleLine="true"
+        android:maxLines="1"
+        tools:text="Hello World!"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/splash_screen_txt_font"/>
+
+    <TextView
+        android:id="@+id/tv_song_desc"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paddingSmall"
+        android:paddingLeft="@dimen/paddingSmall"
+        android:paddingRight="@dimen/paddingSmall"
+        android:singleLine="true"
+        android:maxLines="1"
+        tools:text="Hello World!"
+        android:textColor="@color/colorText"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingSmall">
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:contentDescription="@string/app_name"
+            android:layout_toLeftOf="@+id/fab_play_pause"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/imageSize"
+            android:layout_height="@dimen/imageSize"
+            android:layout_marginRight="@dimen/paddingLarge"
+            android:clickable="true"
+            android:padding="@dimen/paddingSmall"
+            android:src="@drawable/combined_shape"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_play_pause"
+            android:contentDescription="@string/app_name"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/triangle"
+            android:scaleType="center"
+            app:backgroundTint="@android:color/white"
+            app:rippleColor="@android:color/white"
+            app:fabSize="normal"/>
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_toRightOf="@id/fab_play_pause"
+            android:contentDescription="@string/app_name"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/imageSize"
+            android:layout_height="@dimen/imageSize"
+            android:layout_marginLeft="@dimen/paddingLarge"
+            android:padding="@dimen/paddingSmall"
+            android:clickable="true"
+            android:src="@drawable/shape_heart"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

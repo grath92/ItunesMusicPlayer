@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">M Player</string>
+
+    <string name="txt_splash_screen_desc">Listen to your favourite \n songs from youtube.</string>
+    <string name="txt_search_box">Search Music Title, Artists, Movie etc.</string>
+
+    <string name="txt_favorites">Favorites</string>
+
+</resources>
