@@ -1,5 +1,10 @@
 package com.gopal.itunesmusicplayer.adapters;
 
+/*
+* Created By Gopal Krishna Rath
+* -----27/11/2016
+* */
+
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
